@@ -1,0 +1,750 @@
+
+    md.longName = "mixing_ratio_of_aso4i_wrt_dry_air";
+    md.shortName = "aso4i";
+    md.units = "ugkg-1";
+    md.kind = "double";
+    md.tracer = "true";
+    md.horizontalStaggerLocation = "center";
+    md.levels = "full";
+    md.space = "magnitude";
+    addFieldMetadata(fieldsmetadata, nlev, md);
+
+    md.longName = "mixing_ratio_of_ano3i_wrt_dry_air";
+    md.shortName = "ano3i";
+    md.units = "ugkg-1";
+    md.kind = "double";
+    md.tracer = "true";
+    md.horizontalStaggerLocation = "center";
+    md.levels = "full";
+    md.space = "magnitude";
+    addFieldMetadata(fieldsmetadata, nlev, md);
+
+    md.longName = "mixing_ratio_of_anh4i_wrt_dry_air";
+    md.shortName = "anh4i";
+    md.units = "ugkg-1";
+    md.kind = "double";
+    md.tracer = "true";
+    md.horizontalStaggerLocation = "center";
+    md.levels = "full";
+    md.space = "magnitude";
+    addFieldMetadata(fieldsmetadata, nlev, md);
+
+    md.longName = "mixing_ratio_of_anai_wrt_dry_air";
+    md.shortName = "anai";
+    md.units = "ugkg-1";
+    md.kind = "double";
+    md.tracer = "true";
+    md.horizontalStaggerLocation = "center";
+    md.levels = "full";
+    md.space = "magnitude";
+    addFieldMetadata(fieldsmetadata, nlev, md);
+
+    md.longName = "mixing_ratio_of_acli_wrt_dry_air";
+    md.shortName = "acli";
+    md.units = "ugkg-1";
+    md.kind = "double";
+    md.tracer = "true";
+    md.horizontalStaggerLocation = "center";
+    md.levels = "full";
+    md.space = "magnitude";
+    addFieldMetadata(fieldsmetadata, nlev, md);
+
+    md.longName = "mixing_ratio_of_aeci_wrt_dry_air";
+    md.shortName = "aeci";
+    md.units = "ugkg-1";
+    md.kind = "double";
+    md.tracer = "true";
+    md.horizontalStaggerLocation = "center";
+    md.levels = "full";
+    md.space = "magnitude";
+    addFieldMetadata(fieldsmetadata, nlev, md);
+
+    md.longName = "mixing_ratio_of_aothri_wrt_dry_air";
+    md.shortName = "aothri";
+    md.units = "ugkg-1";
+    md.kind = "double";
+    md.tracer = "true";
+    md.horizontalStaggerLocation = "center";
+    md.levels = "full";
+    md.space = "magnitude";
+    addFieldMetadata(fieldsmetadata, nlev, md);
+
+    md.longName = "mixing_ratio_of_alvpo1i_wrt_dry_air";
+    md.shortName = "alvpo1i";
+    md.units = "ugkg-1";
+    md.kind = "double";
+    md.tracer = "true";
+    md.horizontalStaggerLocation = "center";
+    md.levels = "full";
+    md.space = "magnitude";
+    addFieldMetadata(fieldsmetadata, nlev, md);
+
+    md.longName = "mixing_ratio_of_asvpo1i_wrt_dry_air";
+    md.shortName = "asvpo1i";
+    md.units = "ugkg-1";
+    md.kind = "double";
+    md.tracer = "true";
+    md.horizontalStaggerLocation = "center";
+    md.levels = "full";
+    md.space = "magnitude";
+    addFieldMetadata(fieldsmetadata, nlev, md);
+
+    md.longName = "mixing_ratio_of_asvpo2i_wrt_dry_air";
+    md.shortName = "asvpo2i";
+    md.units = "ugkg-1";
+    md.kind = "double";
+    md.tracer = "true";
+    md.horizontalStaggerLocation = "center";
+    md.levels = "full";
+    md.space = "magnitude";
+    addFieldMetadata(fieldsmetadata, nlev, md);
+
+    md.longName = "mixing_ratio_of_alvoo1i_wrt_dry_air";
+    md.shortName = "alvoo1i";
+    md.units = "ugkg-1";
+    md.kind = "double";
+    md.tracer = "true";
+    md.horizontalStaggerLocation = "center";
+    md.levels = "full";
+    md.space = "magnitude";
+    addFieldMetadata(fieldsmetadata, nlev, md);
+
+    md.longName = "mixing_ratio_of_alvoo2i_wrt_dry_air";
+    md.shortName = "alvoo2i";
+    md.units = "ugkg-1";
+    md.kind = "double";
+    md.tracer = "true";
+    md.horizontalStaggerLocation = "center";
+    md.levels = "full";
+    md.space = "magnitude";
+    addFieldMetadata(fieldsmetadata, nlev, md);
+
+    md.longName = "mixing_ratio_of_asvoo1i_wrt_dry_air";
+    md.shortName = "asvoo1i";
+    md.units = "ugkg-1";
+    md.kind = "double";
+    md.tracer = "true";
+    md.horizontalStaggerLocation = "center";
+    md.levels = "full";
+    md.space = "magnitude";
+    addFieldMetadata(fieldsmetadata, nlev, md);
+
+    md.longName = "mixing_ratio_of_asvoo2i_wrt_dry_air";
+    md.shortName = "asvoo2i";
+    md.units = "ugkg-1";
+    md.kind = "double";
+    md.tracer = "true";
+    md.horizontalStaggerLocation = "center";
+    md.levels = "full";
+    md.space = "magnitude";
+    addFieldMetadata(fieldsmetadata, nlev, md);
+
+    md.longName = "mixing_ratio_of_aso4j_wrt_dry_air";
+    md.shortName = "aso4j";
+    md.units = "ugkg-1";
+    md.kind = "double";
+    md.tracer = "true";
+    md.horizontalStaggerLocation = "center";
+    md.levels = "full";
+    md.space = "magnitude";
+    addFieldMetadata(fieldsmetadata, nlev, md);
+
+    md.longName = "mixing_ratio_of_ano3j_wrt_dry_air";
+    md.shortName = "ano3j";
+    md.units = "ugkg-1";
+    md.kind = "double";
+    md.tracer = "true";
+    md.horizontalStaggerLocation = "center";
+    md.levels = "full";
+    md.space = "magnitude";
+    addFieldMetadata(fieldsmetadata, nlev, md);
+
+    md.longName = "mixing_ratio_of_anh4j_wrt_dry_air";
+    md.shortName = "anh4j";
+    md.units = "ugkg-1";
+    md.kind = "double";
+    md.tracer = "true";
+    md.horizontalStaggerLocation = "center";
+    md.levels = "full";
+    md.space = "magnitude";
+    addFieldMetadata(fieldsmetadata, nlev, md);
+
+    md.longName = "mixing_ratio_of_anaj_wrt_dry_air";
+    md.shortName = "anaj";
+    md.units = "ugkg-1";
+    md.kind = "double";
+    md.tracer = "true";
+    md.horizontalStaggerLocation = "center";
+    md.levels = "full";
+    md.space = "magnitude";
+    addFieldMetadata(fieldsmetadata, nlev, md);
+
+    md.longName = "mixing_ratio_of_aclj_wrt_dry_air";
+    md.shortName = "aclj";
+    md.units = "ugkg-1";
+    md.kind = "double";
+    md.tracer = "true";
+    md.horizontalStaggerLocation = "center";
+    md.levels = "full";
+    md.space = "magnitude";
+    addFieldMetadata(fieldsmetadata, nlev, md);
+
+    md.longName = "mixing_ratio_of_aecj_wrt_dry_air";
+    md.shortName = "aecj";
+    md.units = "ugkg-1";
+    md.kind = "double";
+    md.tracer = "true";
+    md.horizontalStaggerLocation = "center";
+    md.levels = "full";
+    md.space = "magnitude";
+    addFieldMetadata(fieldsmetadata, nlev, md);
+
+    md.longName = "mixing_ratio_of_aothrj_wrt_dry_air";
+    md.shortName = "aothrj";
+    md.units = "ugkg-1";
+    md.kind = "double";
+    md.tracer = "true";
+    md.horizontalStaggerLocation = "center";
+    md.levels = "full";
+    md.space = "magnitude";
+    addFieldMetadata(fieldsmetadata, nlev, md);
+
+    md.longName = "mixing_ratio_of_afej_wrt_dry_air";
+    md.shortName = "afej";
+    md.units = "ugkg-1";
+    md.kind = "double";
+    md.tracer = "true";
+    md.horizontalStaggerLocation = "center";
+    md.levels = "full";
+    md.space = "magnitude";
+    addFieldMetadata(fieldsmetadata, nlev, md);
+
+    md.longName = "mixing_ratio_of_asij_wrt_dry_air";
+    md.shortName = "asij";
+    md.units = "ugkg-1";
+    md.kind = "double";
+    md.tracer = "true";
+    md.horizontalStaggerLocation = "center";
+    md.levels = "full";
+    md.space = "magnitude";
+    addFieldMetadata(fieldsmetadata, nlev, md);
+
+    md.longName = "mixing_ratio_of_atij_wrt_dry_air";
+    md.shortName = "atij";
+    md.units = "ugkg-1";
+    md.kind = "double";
+    md.tracer = "true";
+    md.horizontalStaggerLocation = "center";
+    md.levels = "full";
+    md.space = "magnitude";
+    addFieldMetadata(fieldsmetadata, nlev, md);
+
+    md.longName = "mixing_ratio_of_acaj_wrt_dry_air";
+    md.shortName = "acaj";
+    md.units = "ugkg-1";
+    md.kind = "double";
+    md.tracer = "true";
+    md.horizontalStaggerLocation = "center";
+    md.levels = "full";
+    md.space = "magnitude";
+    addFieldMetadata(fieldsmetadata, nlev, md);
+
+    md.longName = "mixing_ratio_of_amgj_wrt_dry_air";
+    md.shortName = "amgj";
+    md.units = "ugkg-1";
+    md.kind = "double";
+    md.tracer = "true";
+    md.horizontalStaggerLocation = "center";
+    md.levels = "full";
+    md.space = "magnitude";
+    addFieldMetadata(fieldsmetadata, nlev, md);
+
+    md.longName = "mixing_ratio_of_amnj_wrt_dry_air";
+    md.shortName = "amnj";
+    md.units = "ugkg-1";
+    md.kind = "double";
+    md.tracer = "true";
+    md.horizontalStaggerLocation = "center";
+    md.levels = "full";
+    md.space = "magnitude";
+    addFieldMetadata(fieldsmetadata, nlev, md);
+
+    md.longName = "mixing_ratio_of_aalj_wrt_dry_air";
+    md.shortName = "aalj";
+    md.units = "ugkg-1";
+    md.kind = "double";
+    md.tracer = "true";
+    md.horizontalStaggerLocation = "center";
+    md.levels = "full";
+    md.space = "magnitude";
+    addFieldMetadata(fieldsmetadata, nlev, md);
+
+    md.longName = "mixing_ratio_of_foreach_wrt_dry_air";
+    md.shortName = "foreach";
+    md.units = "ugkg-1";
+    md.kind = "double";
+    md.tracer = "true";
+    md.horizontalStaggerLocation = "center";
+    md.levels = "full";
+    md.space = "magnitude";
+    addFieldMetadata(fieldsmetadata, nlev, md);
+
+    md.longName = "mixing_ratio_of_avar_wrt_dry_air";
+    md.shortName = "avar";
+    md.units = "ugkg-1";
+    md.kind = "double";
+    md.tracer = "true";
+    md.horizontalStaggerLocation = "center";
+    md.levels = "full";
+    md.space = "magnitude";
+    addFieldMetadata(fieldsmetadata, nlev, md);
+
+    md.longName = "mixing_ratio_of_akj_wrt_dry_air";
+    md.shortName = "akj";
+    md.units = "ugkg-1";
+    md.kind = "double";
+    md.tracer = "true";
+    md.horizontalStaggerLocation = "center";
+    md.levels = "full";
+    md.space = "magnitude";
+    addFieldMetadata(fieldsmetadata, nlev, md);
+
+    md.longName = "mixing_ratio_of_alvpo1j_wrt_dry_air";
+    md.shortName = "alvpo1j";
+    md.units = "ugkg-1";
+    md.kind = "double";
+    md.tracer = "true";
+    md.horizontalStaggerLocation = "center";
+    md.levels = "full";
+    md.space = "magnitude";
+    addFieldMetadata(fieldsmetadata, nlev, md);
+
+    md.longName = "mixing_ratio_of_asvpo1j_wrt_dry_air";
+    md.shortName = "asvpo1j";
+    md.units = "ugkg-1";
+    md.kind = "double";
+    md.tracer = "true";
+    md.horizontalStaggerLocation = "center";
+    md.levels = "full";
+    md.space = "magnitude";
+    addFieldMetadata(fieldsmetadata, nlev, md);
+
+    md.longName = "mixing_ratio_of_asvpo2j_wrt_dry_air";
+    md.shortName = "asvpo2j";
+    md.units = "ugkg-1";
+    md.kind = "double";
+    md.tracer = "true";
+    md.horizontalStaggerLocation = "center";
+    md.levels = "full";
+    md.space = "magnitude";
+    addFieldMetadata(fieldsmetadata, nlev, md);
+
+    md.longName = "mixing_ratio_of_asvpo3j_wrt_dry_air";
+    md.shortName = "asvpo3j";
+    md.units = "ugkg-1";
+    md.kind = "double";
+    md.tracer = "true";
+    md.horizontalStaggerLocation = "center";
+    md.levels = "full";
+    md.space = "magnitude";
+    addFieldMetadata(fieldsmetadata, nlev, md);
+
+    md.longName = "mixing_ratio_of_aivpo1j_wrt_dry_air";
+    md.shortName = "aivpo1j";
+    md.units = "ugkg-1";
+    md.kind = "double";
+    md.tracer = "true";
+    md.horizontalStaggerLocation = "center";
+    md.levels = "full";
+    md.space = "magnitude";
+    addFieldMetadata(fieldsmetadata, nlev, md);
+
+    md.longName = "mixing_ratio_of_axyl1j_wrt_dry_air";
+    md.shortName = "axyl1j";
+    md.units = "ugkg-1";
+    md.kind = "double";
+    md.tracer = "true";
+    md.horizontalStaggerLocation = "center";
+    md.levels = "full";
+    md.space = "magnitude";
+    addFieldMetadata(fieldsmetadata, nlev, md);
+
+    md.longName = "mixing_ratio_of_axyl2j_wrt_dry_air";
+    md.shortName = "axyl2j";
+    md.units = "ugkg-1";
+    md.kind = "double";
+    md.tracer = "true";
+    md.horizontalStaggerLocation = "center";
+    md.levels = "full";
+    md.space = "magnitude";
+    addFieldMetadata(fieldsmetadata, nlev, md);
+
+    md.longName = "mixing_ratio_of_axyl3j_wrt_dry_air";
+    md.shortName = "axyl3j";
+    md.units = "ugkg-1";
+    md.kind = "double";
+    md.tracer = "true";
+    md.horizontalStaggerLocation = "center";
+    md.levels = "full";
+    md.space = "magnitude";
+    addFieldMetadata(fieldsmetadata, nlev, md);
+
+    md.longName = "mixing_ratio_of_atol1j_wrt_dry_air";
+    md.shortName = "atol1j";
+    md.units = "ugkg-1";
+    md.kind = "double";
+    md.tracer = "true";
+    md.horizontalStaggerLocation = "center";
+    md.levels = "full";
+    md.space = "magnitude";
+    addFieldMetadata(fieldsmetadata, nlev, md);
+
+    md.longName = "mixing_ratio_of_atol2j_wrt_dry_air";
+    md.shortName = "atol2j";
+    md.units = "ugkg-1";
+    md.kind = "double";
+    md.tracer = "true";
+    md.horizontalStaggerLocation = "center";
+    md.levels = "full";
+    md.space = "magnitude";
+    addFieldMetadata(fieldsmetadata, nlev, md);
+
+    md.longName = "mixing_ratio_of_atol3j_wrt_dry_air";
+    md.shortName = "atol3j";
+    md.units = "ugkg-1";
+    md.kind = "double";
+    md.tracer = "true";
+    md.horizontalStaggerLocation = "center";
+    md.levels = "full";
+    md.space = "magnitude";
+    addFieldMetadata(fieldsmetadata, nlev, md);
+
+    md.longName = "mixing_ratio_of_abnz1j_wrt_dry_air";
+    md.shortName = "abnz1j";
+    md.units = "ugkg-1";
+    md.kind = "double";
+    md.tracer = "true";
+    md.horizontalStaggerLocation = "center";
+    md.levels = "full";
+    md.space = "magnitude";
+    addFieldMetadata(fieldsmetadata, nlev, md);
+
+    md.longName = "mixing_ratio_of_abnz2j_wrt_dry_air";
+    md.shortName = "abnz2j";
+    md.units = "ugkg-1";
+    md.kind = "double";
+    md.tracer = "true";
+    md.horizontalStaggerLocation = "center";
+    md.levels = "full";
+    md.space = "magnitude";
+    addFieldMetadata(fieldsmetadata, nlev, md);
+
+    md.longName = "mixing_ratio_of_abnz3j_wrt_dry_air";
+    md.shortName = "abnz3j";
+    md.units = "ugkg-1";
+    md.kind = "double";
+    md.tracer = "true";
+    md.horizontalStaggerLocation = "center";
+    md.levels = "full";
+    md.space = "magnitude";
+    addFieldMetadata(fieldsmetadata, nlev, md);
+
+    md.longName = "mixing_ratio_of_aiso1j_wrt_dry_air";
+    md.shortName = "aiso1j";
+    md.units = "ugkg-1";
+    md.kind = "double";
+    md.tracer = "true";
+    md.horizontalStaggerLocation = "center";
+    md.levels = "full";
+    md.space = "magnitude";
+    addFieldMetadata(fieldsmetadata, nlev, md);
+
+    md.longName = "mixing_ratio_of_aiso2j_wrt_dry_air";
+    md.shortName = "aiso2j";
+    md.units = "ugkg-1";
+    md.kind = "double";
+    md.tracer = "true";
+    md.horizontalStaggerLocation = "center";
+    md.levels = "full";
+    md.space = "magnitude";
+    addFieldMetadata(fieldsmetadata, nlev, md);
+
+    md.longName = "mixing_ratio_of_aiso3j_wrt_dry_air";
+    md.shortName = "aiso3j";
+    md.units = "ugkg-1";
+    md.kind = "double";
+    md.tracer = "true";
+    md.horizontalStaggerLocation = "center";
+    md.levels = "full";
+    md.space = "magnitude";
+    addFieldMetadata(fieldsmetadata, nlev, md);
+
+    md.longName = "mixing_ratio_of_atrp1j_wrt_dry_air";
+    md.shortName = "atrp1j";
+    md.units = "ugkg-1";
+    md.kind = "double";
+    md.tracer = "true";
+    md.horizontalStaggerLocation = "center";
+    md.levels = "full";
+    md.space = "magnitude";
+    addFieldMetadata(fieldsmetadata, nlev, md);
+
+    md.longName = "mixing_ratio_of_atrp2j_wrt_dry_air";
+    md.shortName = "atrp2j";
+    md.units = "ugkg-1";
+    md.kind = "double";
+    md.tracer = "true";
+    md.horizontalStaggerLocation = "center";
+    md.levels = "full";
+    md.space = "magnitude";
+    addFieldMetadata(fieldsmetadata, nlev, md);
+
+    md.longName = "mixing_ratio_of_asqtj_wrt_dry_air";
+    md.shortName = "asqtj";
+    md.units = "ugkg-1";
+    md.kind = "double";
+    md.tracer = "true";
+    md.horizontalStaggerLocation = "center";
+    md.levels = "full";
+    md.space = "magnitude";
+    addFieldMetadata(fieldsmetadata, nlev, md);
+
+    md.longName = "mixing_ratio_of_aalk1j_wrt_dry_air";
+    md.shortName = "aalk1j";
+    md.units = "ugkg-1";
+    md.kind = "double";
+    md.tracer = "true";
+    md.horizontalStaggerLocation = "center";
+    md.levels = "full";
+    md.space = "magnitude";
+    addFieldMetadata(fieldsmetadata, nlev, md);
+
+    md.longName = "mixing_ratio_of_aalk2j_wrt_dry_air";
+    md.shortName = "aalk2j";
+    md.units = "ugkg-1";
+    md.kind = "double";
+    md.tracer = "true";
+    md.horizontalStaggerLocation = "center";
+    md.levels = "full";
+    md.space = "magnitude";
+    addFieldMetadata(fieldsmetadata, nlev, md);
+
+    md.longName = "mixing_ratio_of_apah1j_wrt_dry_air";
+    md.shortName = "apah1j";
+    md.units = "ugkg-1";
+    md.kind = "double";
+    md.tracer = "true";
+    md.horizontalStaggerLocation = "center";
+    md.levels = "full";
+    md.space = "magnitude";
+    addFieldMetadata(fieldsmetadata, nlev, md);
+
+    md.longName = "mixing_ratio_of_apah2j_wrt_dry_air";
+    md.shortName = "apah2j";
+    md.units = "ugkg-1";
+    md.kind = "double";
+    md.tracer = "true";
+    md.horizontalStaggerLocation = "center";
+    md.levels = "full";
+    md.space = "magnitude";
+    addFieldMetadata(fieldsmetadata, nlev, md);
+
+    md.longName = "mixing_ratio_of_apah3j_wrt_dry_air";
+    md.shortName = "apah3j";
+    md.units = "ugkg-1";
+    md.kind = "double";
+    md.tracer = "true";
+    md.horizontalStaggerLocation = "center";
+    md.levels = "full";
+    md.space = "magnitude";
+    addFieldMetadata(fieldsmetadata, nlev, md);
+
+    md.longName = "mixing_ratio_of_aorgcj_wrt_dry_air";
+    md.shortName = "aorgcj";
+    md.units = "ugkg-1";
+    md.kind = "double";
+    md.tracer = "true";
+    md.horizontalStaggerLocation = "center";
+    md.levels = "full";
+    md.space = "magnitude";
+    addFieldMetadata(fieldsmetadata, nlev, md);
+
+    md.longName = "mixing_ratio_of_aolgbj_wrt_dry_air";
+    md.shortName = "aolgbj";
+    md.units = "ugkg-1";
+    md.kind = "double";
+    md.tracer = "true";
+    md.horizontalStaggerLocation = "center";
+    md.levels = "full";
+    md.space = "magnitude";
+    addFieldMetadata(fieldsmetadata, nlev, md);
+
+    md.longName = "mixing_ratio_of_aolgaj_wrt_dry_air";
+    md.shortName = "aolgaj";
+    md.units = "ugkg-1";
+    md.kind = "double";
+    md.tracer = "true";
+    md.horizontalStaggerLocation = "center";
+    md.levels = "full";
+    md.space = "magnitude";
+    addFieldMetadata(fieldsmetadata, nlev, md);
+
+    md.longName = "mixing_ratio_of_alvoo1j_wrt_dry_air";
+    md.shortName = "alvoo1j";
+    md.units = "ugkg-1";
+    md.kind = "double";
+    md.tracer = "true";
+    md.horizontalStaggerLocation = "center";
+    md.levels = "full";
+    md.space = "magnitude";
+    addFieldMetadata(fieldsmetadata, nlev, md);
+
+    md.longName = "mixing_ratio_of_alvoo2j_wrt_dry_air";
+    md.shortName = "alvoo2j";
+    md.units = "ugkg-1";
+    md.kind = "double";
+    md.tracer = "true";
+    md.horizontalStaggerLocation = "center";
+    md.levels = "full";
+    md.space = "magnitude";
+    addFieldMetadata(fieldsmetadata, nlev, md);
+
+    md.longName = "mixing_ratio_of_asvoo1j_wrt_dry_air";
+    md.shortName = "asvoo1j";
+    md.units = "ugkg-1";
+    md.kind = "double";
+    md.tracer = "true";
+    md.horizontalStaggerLocation = "center";
+    md.levels = "full";
+    md.space = "magnitude";
+    addFieldMetadata(fieldsmetadata, nlev, md);
+
+    md.longName = "mixing_ratio_of_asvoo2j_wrt_dry_air";
+    md.shortName = "asvoo2j";
+    md.units = "ugkg-1";
+    md.kind = "double";
+    md.tracer = "true";
+    md.horizontalStaggerLocation = "center";
+    md.levels = "full";
+    md.space = "magnitude";
+    addFieldMetadata(fieldsmetadata, nlev, md);
+
+    md.longName = "mixing_ratio_of_asvoo3j_wrt_dry_air";
+    md.shortName = "asvoo3j";
+    md.units = "ugkg-1";
+    md.kind = "double";
+    md.tracer = "true";
+    md.horizontalStaggerLocation = "center";
+    md.levels = "full";
+    md.space = "magnitude";
+    addFieldMetadata(fieldsmetadata, nlev, md);
+
+    md.longName = "mixing_ratio_of_apcsoj_wrt_dry_air";
+    md.shortName = "apcsoj";
+    md.units = "ugkg-1";
+    md.kind = "double";
+    md.tracer = "true";
+    md.horizontalStaggerLocation = "center";
+    md.levels = "full";
+    md.space = "magnitude";
+    addFieldMetadata(fieldsmetadata, nlev, md);
+
+    md.longName = "mixing_ratio_of_aso4k_wrt_dry_air";
+    md.shortName = "aso4k";
+    md.units = "ugkg-1";
+    md.kind = "double";
+    md.tracer = "true";
+    md.horizontalStaggerLocation = "center";
+    md.levels = "full";
+    md.space = "magnitude";
+    addFieldMetadata(fieldsmetadata, nlev, md);
+
+    md.longName = "mixing_ratio_of_asoil_wrt_dry_air";
+    md.shortName = "asoil";
+    md.units = "ugkg-1";
+    md.kind = "double";
+    md.tracer = "true";
+    md.horizontalStaggerLocation = "center";
+    md.levels = "full";
+    md.space = "magnitude";
+    addFieldMetadata(fieldsmetadata, nlev, md);
+
+    md.longName = "mixing_ratio_of_acors_wrt_dry_air";
+    md.shortName = "acors";
+    md.units = "ugkg-1";
+    md.kind = "double";
+    md.tracer = "true";
+    md.horizontalStaggerLocation = "center";
+    md.levels = "full";
+    md.space = "magnitude";
+    addFieldMetadata(fieldsmetadata, nlev, md);
+
+    md.longName = "mixing_ratio_of_aseacat_wrt_dry_air";
+    md.shortName = "aseacat";
+    md.units = "ugkg-1";
+    md.kind = "double";
+    md.tracer = "true";
+    md.horizontalStaggerLocation = "center";
+    md.levels = "full";
+    md.space = "magnitude";
+    addFieldMetadata(fieldsmetadata, nlev, md);
+
+    md.longName = "mixing_ratio_of_aclk_wrt_dry_air";
+    md.shortName = "aclk";
+    md.units = "ugkg-1";
+    md.kind = "double";
+    md.tracer = "true";
+    md.horizontalStaggerLocation = "center";
+    md.levels = "full";
+    md.space = "magnitude";
+    addFieldMetadata(fieldsmetadata, nlev, md);
+
+    md.longName = "mixing_ratio_of_ano3k_wrt_dry_air";
+    md.shortName = "ano3k";
+    md.units = "ugkg-1";
+    md.kind = "double";
+    md.tracer = "true";
+    md.horizontalStaggerLocation = "center";
+    md.levels = "full";
+    md.space = "magnitude";
+    addFieldMetadata(fieldsmetadata, nlev, md);
+
+    md.longName = "mixing_ratio_of_anh4k_wrt_dry_air";
+    md.shortName = "anh4k";
+    md.units = "ugkg-1";
+    md.kind = "double";
+    md.tracer = "true";
+    md.horizontalStaggerLocation = "center";
+    md.levels = "full";
+    md.space = "magnitude";
+    addFieldMetadata(fieldsmetadata, nlev, md);
+
+    md.longName = "mixing_ratio_of_smoke_wrt_dry_air";
+    md.shortName = "smoke";
+    md.units = "ugkg-1";
+    md.kind = "double";
+    md.tracer = "true";
+    md.horizontalStaggerLocation = "center";
+    md.levels = "full";
+    md.space = "magnitude";
+    addFieldMetadata(fieldsmetadata, nlev, md);
+
+    md.longName = "mixing_ratio_of_dust_wrt_dry_air";
+    md.shortName = "dust";
+    md.units = "ugkg-1";
+    md.kind = "double";
+    md.tracer = "true";
+    md.horizontalStaggerLocation = "center";
+    md.levels = "full";
+    md.space = "magnitude";
+    addFieldMetadata(fieldsmetadata, nlev, md);
+
+    md.longName = "mixing_ratio_of_coarsepm_wrt_dry_air";
+    md.shortName = "coarsepm";
+    md.units = "ugkg-1";
+    md.kind = "double";
+    md.tracer = "true";
+    md.horizontalStaggerLocation = "center";
+    md.levels = "full";
+    md.space = "magnitude";
+    addFieldMetadata(fieldsmetadata, nlev, md);

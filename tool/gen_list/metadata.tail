@@ -1,0 +1,23 @@
+
+    md.longName = "mixing_ratio_of_particulate_matter_2p5";
+    md.shortName = "particulate_matter_2p5";
+    md.units = "ugkg-1";
+    md.kind = "double";
+    md.tracer = "true";
+    md.horizontalStaggerLocation = "center";
+    md.levels = "full";
+    md.space = "magnitude";
+    addFieldMetadata(fieldsmetadata, nlev, md);
+
+    md.longName = "fine_particulate_matter";
+    md.shortName = "fine_particulate_matter";
+    md.units = "ugM-3";
+    md.kind = "double";
+    md.tracer = "true";
+    md.horizontalStaggerLocation = "center";
+    md.levels = "full";
+    md.space = "magnitude";
+    addFieldMetadata(fieldsmetadata, nlev, md);
+
+  }
+}  // namespace fv3jedi

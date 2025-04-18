@@ -1,0 +1,6 @@
+    md.longName = "mixing_ratio_of_smoke_wrt_dry_air",
+    md.longName = "mixing_ratio_of_dust_wrt_dry_air",
+    md.longName = "mixing_ratio_of_coarsepm_wrt_dry_air",
+           "mixing_ratio_of_smoke_wrt_dry_air",
+           "mixing_ratio_of_dust_wrt_dry_air",
+           "mixing_ratio_of_coarsepm_wrt_dry_air",

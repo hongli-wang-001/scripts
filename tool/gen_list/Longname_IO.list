@@ -1,0 +1,300 @@
+
+- long name: mixing_ratio_of_aso4i_wrt_dry_air 
+  io name: aso4i 
+  units: ugkg-1
+
+- long name: mixing_ratio_of_ano3i_wrt_dry_air 
+  io name: ano3i 
+  units: ugkg-1
+
+- long name: mixing_ratio_of_anh4i_wrt_dry_air 
+  io name: anh4i 
+  units: ugkg-1
+
+- long name: mixing_ratio_of_anai_wrt_dry_air 
+  io name: anai 
+  units: ugkg-1
+
+- long name: mixing_ratio_of_acli_wrt_dry_air 
+  io name: acli 
+  units: ugkg-1
+
+- long name: mixing_ratio_of_aeci_wrt_dry_air 
+  io name: aeci 
+  units: ugkg-1
+
+- long name: mixing_ratio_of_aothri_wrt_dry_air 
+  io name: aothri 
+  units: ugkg-1
+
+- long name: mixing_ratio_of_alvpo1i_wrt_dry_air 
+  io name: alvpo1i 
+  units: ugkg-1
+
+- long name: mixing_ratio_of_asvpo1i_wrt_dry_air 
+  io name: asvpo1i 
+  units: ugkg-1
+
+- long name: mixing_ratio_of_asvpo2i_wrt_dry_air 
+  io name: asvpo2i 
+  units: ugkg-1
+
+- long name: mixing_ratio_of_alvoo1i_wrt_dry_air 
+  io name: alvoo1i 
+  units: ugkg-1
+
+- long name: mixing_ratio_of_alvoo2i_wrt_dry_air 
+  io name: alvoo2i 
+  units: ugkg-1
+
+- long name: mixing_ratio_of_asvoo1i_wrt_dry_air 
+  io name: asvoo1i 
+  units: ugkg-1
+
+- long name: mixing_ratio_of_asvoo2i_wrt_dry_air 
+  io name: asvoo2i 
+  units: ugkg-1
+
+- long name: mixing_ratio_of_aso4j_wrt_dry_air 
+  io name: aso4j 
+  units: ugkg-1
+
+- long name: mixing_ratio_of_ano3j_wrt_dry_air 
+  io name: ano3j 
+  units: ugkg-1
+
+- long name: mixing_ratio_of_anh4j_wrt_dry_air 
+  io name: anh4j 
+  units: ugkg-1
+
+- long name: mixing_ratio_of_anaj_wrt_dry_air 
+  io name: anaj 
+  units: ugkg-1
+
+- long name: mixing_ratio_of_aclj_wrt_dry_air 
+  io name: aclj 
+  units: ugkg-1
+
+- long name: mixing_ratio_of_aecj_wrt_dry_air 
+  io name: aecj 
+  units: ugkg-1
+
+- long name: mixing_ratio_of_aothrj_wrt_dry_air 
+  io name: aothrj 
+  units: ugkg-1
+
+- long name: mixing_ratio_of_afej_wrt_dry_air 
+  io name: afej 
+  units: ugkg-1
+
+- long name: mixing_ratio_of_asij_wrt_dry_air 
+  io name: asij 
+  units: ugkg-1
+
+- long name: mixing_ratio_of_atij_wrt_dry_air 
+  io name: atij 
+  units: ugkg-1
+
+- long name: mixing_ratio_of_acaj_wrt_dry_air 
+  io name: acaj 
+  units: ugkg-1
+
+- long name: mixing_ratio_of_amgj_wrt_dry_air 
+  io name: amgj 
+  units: ugkg-1
+
+- long name: mixing_ratio_of_amnj_wrt_dry_air 
+  io name: amnj 
+  units: ugkg-1
+
+- long name: mixing_ratio_of_aalj_wrt_dry_air 
+  io name: aalj 
+  units: ugkg-1
+
+- long name: mixing_ratio_of_foreach_wrt_dry_air 
+  io name: foreach 
+  units: ugkg-1
+
+- long name: mixing_ratio_of_avar_wrt_dry_air 
+  io name: avar 
+  units: ugkg-1
+
+- long name: mixing_ratio_of_akj_wrt_dry_air 
+  io name: akj 
+  units: ugkg-1
+
+- long name: mixing_ratio_of_alvpo1j_wrt_dry_air 
+  io name: alvpo1j 
+  units: ugkg-1
+
+- long name: mixing_ratio_of_asvpo1j_wrt_dry_air 
+  io name: asvpo1j 
+  units: ugkg-1
+
+- long name: mixing_ratio_of_asvpo2j_wrt_dry_air 
+  io name: asvpo2j 
+  units: ugkg-1
+
+- long name: mixing_ratio_of_asvpo3j_wrt_dry_air 
+  io name: asvpo3j 
+  units: ugkg-1
+
+- long name: mixing_ratio_of_aivpo1j_wrt_dry_air 
+  io name: aivpo1j 
+  units: ugkg-1
+
+- long name: mixing_ratio_of_axyl1j_wrt_dry_air 
+  io name: axyl1j 
+  units: ugkg-1
+
+- long name: mixing_ratio_of_axyl2j_wrt_dry_air 
+  io name: axyl2j 
+  units: ugkg-1
+
+- long name: mixing_ratio_of_axyl3j_wrt_dry_air 
+  io name: axyl3j 
+  units: ugkg-1
+
+- long name: mixing_ratio_of_atol1j_wrt_dry_air 
+  io name: atol1j 
+  units: ugkg-1
+
+- long name: mixing_ratio_of_atol2j_wrt_dry_air 
+  io name: atol2j 
+  units: ugkg-1
+
+- long name: mixing_ratio_of_atol3j_wrt_dry_air 
+  io name: atol3j 
+  units: ugkg-1
+
+- long name: mixing_ratio_of_abnz1j_wrt_dry_air 
+  io name: abnz1j 
+  units: ugkg-1
+
+- long name: mixing_ratio_of_abnz2j_wrt_dry_air 
+  io name: abnz2j 
+  units: ugkg-1
+
+- long name: mixing_ratio_of_abnz3j_wrt_dry_air 
+  io name: abnz3j 
+  units: ugkg-1
+
+- long name: mixing_ratio_of_aiso1j_wrt_dry_air 
+  io name: aiso1j 
+  units: ugkg-1
+
+- long name: mixing_ratio_of_aiso2j_wrt_dry_air 
+  io name: aiso2j 
+  units: ugkg-1
+
+- long name: mixing_ratio_of_aiso3j_wrt_dry_air 
+  io name: aiso3j 
+  units: ugkg-1
+
+- long name: mixing_ratio_of_atrp1j_wrt_dry_air 
+  io name: atrp1j 
+  units: ugkg-1
+
+- long name: mixing_ratio_of_atrp2j_wrt_dry_air 
+  io name: atrp2j 
+  units: ugkg-1
+
+- long name: mixing_ratio_of_asqtj_wrt_dry_air 
+  io name: asqtj 
+  units: ugkg-1
+
+- long name: mixing_ratio_of_aalk1j_wrt_dry_air 
+  io name: aalk1j 
+  units: ugkg-1
+
+- long name: mixing_ratio_of_aalk2j_wrt_dry_air 
+  io name: aalk2j 
+  units: ugkg-1
+
+- long name: mixing_ratio_of_apah1j_wrt_dry_air 
+  io name: apah1j 
+  units: ugkg-1
+
+- long name: mixing_ratio_of_apah2j_wrt_dry_air 
+  io name: apah2j 
+  units: ugkg-1
+
+- long name: mixing_ratio_of_apah3j_wrt_dry_air 
+  io name: apah3j 
+  units: ugkg-1
+
+- long name: mixing_ratio_of_aorgcj_wrt_dry_air 
+  io name: aorgcj 
+  units: ugkg-1
+
+- long name: mixing_ratio_of_aolgbj_wrt_dry_air 
+  io name: aolgbj 
+  units: ugkg-1
+
+- long name: mixing_ratio_of_aolgaj_wrt_dry_air 
+  io name: aolgaj 
+  units: ugkg-1
+
+- long name: mixing_ratio_of_alvoo1j_wrt_dry_air 
+  io name: alvoo1j 
+  units: ugkg-1
+
+- long name: mixing_ratio_of_alvoo2j_wrt_dry_air 
+  io name: alvoo2j 
+  units: ugkg-1
+
+- long name: mixing_ratio_of_asvoo1j_wrt_dry_air 
+  io name: asvoo1j 
+  units: ugkg-1
+
+- long name: mixing_ratio_of_asvoo2j_wrt_dry_air 
+  io name: asvoo2j 
+  units: ugkg-1
+
+- long name: mixing_ratio_of_asvoo3j_wrt_dry_air 
+  io name: asvoo3j 
+  units: ugkg-1
+
+- long name: mixing_ratio_of_apcsoj_wrt_dry_air 
+  io name: apcsoj 
+  units: ugkg-1
+
+- long name: mixing_ratio_of_aso4k_wrt_dry_air 
+  io name: aso4k 
+  units: ugkg-1
+
+- long name: mixing_ratio_of_asoil_wrt_dry_air 
+  io name: asoil 
+  units: ugkg-1
+
+- long name: mixing_ratio_of_acors_wrt_dry_air 
+  io name: acors 
+  units: ugkg-1
+
+- long name: mixing_ratio_of_aseacat_wrt_dry_air 
+  io name: aseacat 
+  units: ugkg-1
+
+- long name: mixing_ratio_of_aclk_wrt_dry_air 
+  io name: aclk 
+  units: ugkg-1
+
+- long name: mixing_ratio_of_ano3k_wrt_dry_air 
+  io name: ano3k 
+  units: ugkg-1
+
+- long name: mixing_ratio_of_anh4k_wrt_dry_air 
+  io name: anh4k 
+  units: ugkg-1
+
+- long name: pm2p5_fraction_of_aitken_mode
+  io name: pm25at
+  units: none
+
+- long name: pm2p5_fraction_of_accumulation_mode 
+  io name: pm25ac
+  units: none
+
+- long name: pm2p5_fraction_of_coarse_mode
+  io name: pm25co
+  units: none

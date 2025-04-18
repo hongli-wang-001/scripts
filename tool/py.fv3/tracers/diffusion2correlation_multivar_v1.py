@@ -1,0 +1,117 @@
+import os
+import netCDF4 as nc
+import numpy as np
+from scipy.ndimage import gaussian_filter
+from scipy.signal import correlate2d
+import matplotlib.pyplot as plt
+
+# Define the input and output NetCDF file names and the list of variables
+input_netcdf_file = 'file1_fcst.nc'
+output_netcdf_file = 'filtered_sigma5_output.nc'
+print("Current working directory:", os.getcwd())
+print("File path:", input_netcdf_file)
+variables = [
+    'aso4i', 'ano3i', 'anh4i', 'anai', 'acli', 'aeci', 'aothri', 'alvpo1i',
+    'asvpo1i', 'asvpo2i', 'alvoo1i', 'alvoo2i', 'asvoo1i', 'asvoo2i', 'aso4j',
+    'ano3j', 'anh4j', 'anaj', 'aclj', 'aecj', 'aothrj', 'afej', 'asij', 'atij',
+    'acaj', 'amgj', 'amnj', 'aalj', 'akj', 'alvpo1j', 'asvpo1j', 'asvpo2j',
+    'asvpo3j', 'aivpo1j', 'axyl1j', 'axyl2j', 'axyl3j', 'atol1j', 'atol2j',
+    'atol3j', 'abnz1j', 'abnz2j', 'abnz3j', 'aiso1j', 'aiso2j', 'aiso3j',
+    'atrp1j', 'atrp2j', 'asqtj', 'aalk1j', 'aalk2j', 'apah1j', 'apah2j',
+    'apah3j', 'aorgcj', 'aolgbj', 'aolgaj', 'alvoo1j', 'alvoo2j', 'asvoo1j',
+    'asvoo2j', 'asvoo3j', 'apcsoj', 'aso4k', 'asoil', 'acors', 'aseacat',
+    'aclk', 'ano3k', 'anh4k'
+]
+
+# Define the Gaussian filter standard deviation
+sigma = 5.0  # Adjust this value as needed for your filtering
+
+# Function to check file existence and print path
+def check_file_existence(file_path):
+    if not os.path.isfile(file_path):
+        raise FileNotFoundError(f"The file {file_path} does not exist.")
+    print("File path:", file_path)
+
+def process_variable(input_netcdf_file, variable_name, sigma, output_file):
+    try:
+        # Open the input NetCDF file and read the variable
+        with nc.Dataset(input_netcdf_file, 'r') as ds:
+            # Check if the variable exists
+            if variable_name not in ds.variables:
+                raise ValueError(f"Variable '{variable_name}' not found in the input file.")
+
+            # Read the 4D array from the specified variable
+            data = ds.variables[variable_name][:]
+
+            # Ensure the data is 4D
+            if data.ndim != 4:
+                raise ValueError(f"The variable '{variable_name}' does not contain a 4D array.")  # Get dimensions
+            time_dim, z_dim, y_dim, x_dim = data.shape
+
+        # Initialize arrays for filtered data and correlations
+        filtered_data = np.empty_like(data)
+        correlation_original = np.empty((time_dim, z_dim))
+        correlation_filtered = np.empty((time_dim, z_dim))
+
+        # Apply the Gaussian filter and calculate correlations
+        for t in range(time_dim):
+            for z in range(z_dim):
+                # Apply Gaussian filter
+                filtered_data[t, z, :, :] = gaussian_filter(data[t, z, :, :], sigma=sigma)
+
+                # Calculate correlations
+                original_2d = data[t, z, :, :]
+                filtered_2d = filtered_data[t, z, :, :]
+
+                # Compute correlation matrices
+                correlation_original[t, z] = np.mean(correlate2d(original_2d, original_2d, mode='valid'))
+                correlation_filtered[t, z] = np.mean(correlate2d(filtered_2d, filtered_2d, mode='valid'))
+
+        # Save the filtered data and correlations to a new NetCDF file
+        with nc.Dataset(output_file, 'a', format='NETCDF4') as ds_out:
+            # Create dimensions if they do not exist
+            if 'time' not in ds_out.dimensions:
+                ds_out.createDimension('time', time_dim)
+            if 'zaxis_1' not in ds_out.dimensions:
+                ds_out.createDimension('zaxis_1', z_dim)
+            if 'yaxis_1' not in ds_out.dimensions:
+                ds_out.createDimension('yaxis_1', y_dim)
+            if 'xaxis_1' not in ds_out.dimensions:
+                ds_out.createDimension('xaxis_1', x_dim)
+
+            # Create or update variable for filtered data
+            if variable_name in ds_out.variables:
+                filtered_var = ds_out.variables[variable_name]
+            else:
+                filtered_var = ds_out.createVariable(variable_name, 'f4', ('time', 'zaxis_1', 'yaxis_1', 'xaxis_1'))
+
+            # Write the filtered data
+            filtered_var[:] = filtered_data
+
+            # Copy attributes from the original variable
+            with nc.Dataset(input_netcdf_file, 'r') as ds:
+                for attr in ds.variables[variable_name].ncattrs():
+                    filtered_var.setncattr(attr, ds.variables[variable_name].getncattr(attr))
+
+            # Save correlation matrices
+            corr_original_var = ds_out.createVariable(f'{variable_name}_corr_original', 'f4', ('time', 'zaxis_1'))
+            corr_filtered_var = ds_out.createVariable(f'{variable_name}_corr_filtered', 'f4', ('time', 'zaxis_1'))
+
+            corr_original_var[:] = correlation_original
+            corr_filtered_var[:] = correlation_filtered
+
+        print(f"Filtered data and correlations for variable '{variable_name}' saved to {output_file}")
+
+    except FileNotFoundError:
+        print(f"Error: The file {input_netcdf_file} does not exist.")
+    except ValueError as e:
+        print(f"Error: {e}")
+    except Exception as e:
+        print(f"An unexpected error occurred: {e}")
+
+# Check if the input file exists
+check_file_existence(input_netcdf_file)
+# Process each variable
+for variable in variables:
+    process_variable(input_netcdf_file, variable, sigma, output_netcdf_file)
+
