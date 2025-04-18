@@ -1,0 +1,12 @@
+#!/bin/ksh
+set -euax
+
+libs="-L/lfs4/HFIP/hfv3gfs/nwprod/hpc-stack/libs/intel-18.0.5.274/bufr/11.4.0/lib  -lbufr_4"
+
+#FC=ifort
+#FC_FLAGS=-stand:f08  -fp-model precise -fp-model source -fp-stack-check -g -traceback -check all -warn all -c
+
+#ifort -traceback -g -FR -o $1.x $1.f90 $libs 
+ifort  -o $1.x $1.f90 $libs 
+
+

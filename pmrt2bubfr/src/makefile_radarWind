@@ -1,0 +1,10 @@
+codes= radarWind2bufr.f90
+
+FC = ifort
+LIBS = -L$(NETCDF)/lib -lnetcdf  -lnetcdff        #-L$(HDF5)/lib -lhdf5_hl -lhdf5
+libs = -L/lfs4/HFIP/hfv3gfs/nwprod/hpc-stack/libs/intel-18.0.5.274/bufr/11.4.0/lib  -lbufr_4
+
+radarWind2bufr.x: $(codes)
+	$(FC) -o radarWind2bufr.x $(codes) -I$(NETCDF)/include $(LIBS) $(libs)
+	rm -f *.o
+

@@ -1,0 +1,140 @@
+--------
+12/2022
+-------
+PM2.5 converter: convert real time ascii file to bufr format
+
+pmbufr.f90,run_pm.ksh
+run_decode_pm.ksh
+
+
+
+
+----------
+01/2021
+---------
+generate PM data for 20190803-07, use /scratch2/BMC/wrfruc/hwang/wf1/data/perry
+generate PM data for 20190811-31, use /scratch2/BMC/wrfruc/hwang/wf1/data/prod
+need 0808-0810 data from hongli
+
+
+*** Bug: 20190831/pm25.bufr.24: cycle date 2019083200 which is not right, need to fix in encode code.
+ 
+
+
+-----------
+09/04/2020
+-----------
+run test/comgsi_run_chem.ksh, 
+it's able to read 2019080601 pm.bufr
+see output /scratch1/BMC/wrfruc/rli/WF1_test_pm25/stdout 
+
+gsiparm.anl
+&GRIDOPTS
+   fv3_regional=.true.,grid_ratio_fv3_regional=3.0,nvege_type=20,
+
+
+
+-----------
+08/13/2020
+-----------
+
+scp chemdata.tar  Ruifang.Li@dtn-jet.rdhpcs.noaa.gov:/lfs4/BMC/wrfruc/Ruifang.Li works on Jet, not Hera
+cp files from local computer to hera, 
+ssh -L55809:localhost:55809 Ruifang.Li@hera-rsa.boulder.rdhpcs.noaa.gov
+scp -P 55809 chemdata.tar  Ruifang.Li@localhost:/scratch1/BMC/zrtrr/rli/WF1/PM/Data/test_case
+
+
+check pm code in GSI
+
+read_obs.F90 --> read_anowbufr
+obsmod.F90: dfile - gsi namelist
+
+-----------
+07/30/2020
+-----------
+PM/Data/untar.ksh: prepare PM daily data
+pmbufr.f90: read pm one day prepbufr data and write to hourly data
+cwf: compile code
+run_pm.ksh: run script
+run_chg_pmname.ksh: change bufr file name after run_pm.ksh
+
+
+pmbufr_decode.f90: decode pm prepbufr data
+run_decode_pm.ksh: run script
+misc/obs_loc.ncl: plot obs location
+misc/check_hr.ksh: check # of obs for each hour from one day data
+
+
+-----------
+07/09/2020
+-----------
+201132  HINC  201000
+indicates that ( 132 - 128 ) = 4 bits should be added to the data width,
+therefore, the corresponding data value will occupy ( 12 + 4 ) = 16 bits.
+
+Other than 201YYY, the BUFRLIB software also supports the similar use of the 202YYY (change scale),
+203YYY (change reference value), 
+204YYY (add associated field), 
+205YYY (add character data), 
+206YYY (define data width for local descriptor), 
+207YYY (increase scale, reference value and data width),
+208YYY (change data width for CCITT IA5 descriptor) operators from BUFR Table C.
+
+-----------
+06/15/2020
+-----------
+Input emission grid must match FV3's internal grid, the output grid can be different. 
+As a matter of fact, in our test runs we've used the output settings provided by the regional workflow, 
+which generated FV3 output files over a Lambert conformal grid at 25km resolution.
+
+CMAQ's input files are not included in FV3SAR and will need to be provided separately.
+Restart capability is needed. The model isn't fully mature at this time and
+such a capability needs to be added once we have a better idea of what needs to be restarted.
+
+AOD and PM2.5 diagnostics should be available in CMAQ, although they are currently not used by AQM.
+
+
+
+
+The Community Multiscale Air Quality (CMAQ) code:
+/scratch2/BMC/wrfruc/hwang/wf1/cmaq/5.2
+/scratch1/NCEPDEV/nems/Raffaele.Montuoro/dev/fv3sar/dev/io/dev/repo/EMC_FV3GFS-AQM
+
+CMAQ User's Guide: You may find the manual in the AQM source code repository or online.
+Here's the link for CMAQ v5.2: https://github.com/USEPA/CMAQ/tree/5.2/DOCS/User_Manual. 
+
+In our CAM-CMAQ runs we use the Carbon Bond 6 r3 (CB6r3) chemical mechanism 
+(see references in https://github.com/USEPA/CMAQ/blob/5.2/CCTM/docs/Release_Notes/CB6_release_notes.md)
+along with the 6th generation aerosol module (AERO6).
+A list of species included in these modules is available at:
+https://github.com/USEPA/CMAQ/blob/5.2/DOCS/User_Manual/Appendix_A/cb6r3_ae6_aq/CB6_species_table.md.
+
+AERO6 provides the get_aod() subroutine to compute AOD values and write them to a diagnostic file.
+This subroutine computes AOD using the light extinction of aerosols at 550nm, which is estimated by an algorithm derived with 
+IMPROVE (Interagency Monitoring of Protected Visual Environments) particle speciation data. 
+You will find the get_aod() in file EMC_FV3GFS-AQM/AQM/src/CMAQ/CCTM/src/aero/aero6/AOD_DEFN.F.
+Note that such computation is disabled in AQM and
+can be enabled in the original CMAQ code by setting the environment variable CTM_AOD to Y.
+
+Computation of PM2.5 (and PM10) is more complex and it involves the following files in the AERO6 directory src/CMAQ/CCTM/src/aero/aero6
+aero_driver.F, AEROSOL_CHEMISTRY.F, and opapmdiag.F. Both instantaneous and averaged PM diagnostic values can be computed.
+
+
+
+
+Data sample Bufr format:
+/scratch2/BMC/wrfruc/hwang/wf1/data/perry
+
+-rw-r--r-- 1 Hongli.Wang wrfruc    778088 Aug  7  2019 aqm.t12z.anowpm.pb.tm00
+-rw-r--r-- 1 Hongli.Wang wrfruc    778000 Aug  6  2019 aqm.t12z.anowpm.pb.tm024
+-rw-r--r-- 1 Hongli.Wang wrfruc    777160 Aug  6  2019 aqm.t12z.anowpm.pb.tm120
+
+
+PM2.5 data:
+/scratch2/BMC/wrfruc/hwang/wf1/data/jianping
+
+
+GSL realtime PM2.5 stream: 
+Ascii: /scratch2/BMC/public/data/airnow/raw
+Grib2: /scratch2/BMC/public/data/grids/airnow/pm2p5
+
