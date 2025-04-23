@@ -1,0 +1,44 @@
+provider: VIIRSAOD
+window begin: 2020-09-01T00:00:00Z   # window set does not work yet...
+window end: 2020-09-01T01:00:00Z     # window set does not work yet...
+binning:                     # if binning is set, superobbing is used. Otherwise, thinning is used.
+  stride: 16                # the origianl grids that are skipped (in row and in column) during superobbing. E.g., 132 x 132 points becomes 1 after superobbing. This value varies to match model grids. The raw VIIRS obs grid spacing is 750 m. To match the C96 (100 km) model grids: 100 km / 750 m = 133
+  min number of obs: 36     # Minimum observation number required to do averaging. If not enough obs are available, the target location will be assigned with missing value.
+  #cressman radius: 100       # radius in km, used for distance-inverse weighting. The points outside the radius is given 0 weight. If cressman radius is set, weighted average is done. Otherwize, simple average is done.
+variable: aerosolOpticalDepth
+output file: JRR-AOD_v2r3_npp_2020090100_obs72.nc # viirs_aod_iodacstet.ioda.nc
+input files: 
+#- /home/Yaping.Wang/stmp3/GDASApp/iodaconv/test/testinput/viirs_aod.nc
+- /scratch1/BMC/wrfruc/hwang/wf1/data/case2020sep/aod_viis/npp/001/JRR-AOD_v2r3_npp_s202009010019368_e202009010021010_c202009010113080.nc
+- /scratch1/BMC/wrfruc/hwang/wf1/data/case2020sep/aod_viis/npp/001/JRR-AOD_v2r3_npp_s202009010021022_e202009010022264_c202009010110190.nc
+- /scratch1/BMC/wrfruc/hwang/wf1/data/case2020sep/aod_viis/npp/001/JRR-AOD_v2r3_npp_s202009010022276_e202009010023518_c202009010110290.nc
+- /scratch1/BMC/wrfruc/hwang/wf1/data/case2020sep/aod_viis/npp/001/JRR-AOD_v2r3_npp_s202009010023530_e202009010025172_c202009010110550.nc
+- /scratch1/BMC/wrfruc/hwang/wf1/data/case2020sep/aod_viis/npp/001/JRR-AOD_v2r3_npp_s202009010025184_e202009010026426_c202009010112170.nc
+- /scratch1/BMC/wrfruc/hwang/wf1/data/case2020sep/aod_viis/npp/001/JRR-AOD_v2r3_npp_s202009010026438_e202009010028080_c202009010112240.nc
+- /scratch1/BMC/wrfruc/hwang/wf1/data/case2020sep/aod_viis/npp/001/JRR-AOD_v2r3_npp_s202009010028092_e202009010029316_c202009010112300.nc
+- /scratch1/BMC/wrfruc/hwang/wf1/data/case2020sep/aod_viis/npp/001/JRR-AOD_v2r3_npp_s202009010029328_e202009010030570_c202009010112380.nc
+- /scratch1/BMC/wrfruc/hwang/wf1/data/case2020sep/aod_viis/npp/001/JRR-AOD_v2r3_npp_s202009010030582_e202009010032224_c202009010112080.nc
+- /scratch1/BMC/wrfruc/hwang/wf1/data/case2020sep/aod_viis/npp/001/JRR-AOD_v2r3_npp_s202009010032236_e202009010033478_c202009010111450.nc
+- /scratch1/BMC/wrfruc/hwang/wf1/data/case2020sep/aod_viis/npp/001/JRR-AOD_v2r3_npp_s202009010033491_e202009010035132_c202009010112240.nc
+- /scratch1/BMC/wrfruc/hwang/wf1/data/case2020sep/aod_viis/npp/001/JRR-AOD_v2r3_npp_s202009010035145_e202009010036386_c202009010112150.nc
+- /scratch1/BMC/wrfruc/hwang/wf1/data/case2020sep/aod_viis/npp/001/JRR-AOD_v2r3_npp_s202009010036399_e202009010038040_c202009010112190.nc
+- /scratch1/BMC/wrfruc/hwang/wf1/data/case2020sep/aod_viis/npp/001/JRR-AOD_v2r3_npp_s202009010038053_e202009010039294_c202009010112460.nc
+- /scratch1/BMC/wrfruc/hwang/wf1/data/case2020sep/aod_viis/npp/001/JRR-AOD_v2r3_npp_s202009010039307_e202009010040548_c202009010112570.nc
+- /scratch1/BMC/wrfruc/hwang/wf1/data/case2020sep/aod_viis/npp/001/JRR-AOD_v2r3_npp_s202009010040561_e202009010042203_c202009010112540.nc
+- /scratch1/BMC/wrfruc/hwang/wf1/data/case2020sep/aod_viis/npp/001/JRR-AOD_v2r3_npp_s202009010042215_e202009010043457_c202009010112540.nc
+- /scratch1/BMC/wrfruc/hwang/wf1/data/case2020sep/aod_viis/npp/001/JRR-AOD_v2r3_npp_s202009010043469_e202009010045111_c202009010114480.nc
+- /scratch1/BMC/wrfruc/hwang/wf1/data/case2020sep/aod_viis/npp/001/JRR-AOD_v2r3_npp_s202009010045123_e202009010046365_c202009010114490.nc
+- /scratch1/BMC/wrfruc/hwang/wf1/data/case2020sep/aod_viis/npp/001/JRR-AOD_v2r3_npp_s202009010046377_e202009010048019_c202009010114270.nc
+- /scratch1/BMC/wrfruc/hwang/wf1/data/case2020sep/aod_viis/npp/001/JRR-AOD_v2r3_npp_s202009010048031_e202009010049273_c202009010114410.nc
+- /scratch1/BMC/wrfruc/hwang/wf1/data/case2020sep/aod_viis/npp/001/JRR-AOD_v2r3_npp_s202009010049285_e202009010050527_c202009010123230.nc
+- /scratch1/BMC/wrfruc/hwang/wf1/data/case2020sep/aod_viis/npp/001/JRR-AOD_v2r3_npp_s202009010050539_e202009010052181_c202009010248450.nc
+- /scratch1/BMC/wrfruc/hwang/wf1/data/case2020sep/aod_viis/npp/001/JRR-AOD_v2r3_npp_s202009010052193_e202009010053435_c202009010248170.nc
+- /scratch1/BMC/wrfruc/hwang/wf1/data/case2020sep/aod_viis/npp/001/JRR-AOD_v2r3_npp_s202009010053447_e202009010055089_c202009010248340.nc
+- /scratch1/BMC/wrfruc/hwang/wf1/data/case2020sep/aod_viis/npp/001/JRR-AOD_v2r3_npp_s202009010055101_e202009010056343_c202009010246540.nc
+- /scratch1/BMC/wrfruc/hwang/wf1/data/case2020sep/aod_viis/npp/001/JRR-AOD_v2r3_npp_s202009010056355_e202009010057597_c202009010246350.nc
+- /scratch1/BMC/wrfruc/hwang/wf1/data/case2020sep/aod_viis/npp/001/JRR-AOD_v2r3_npp_s202009010058009_e202009010059251_c202009010246020.nc
+
+thinning:
+  threshold: 0             # if superob, this value is set to 0
+channel: 4                 
+preqc: 0                   # the obs with QC flag equal or less than preqc value is used in superobbing or thinning.
