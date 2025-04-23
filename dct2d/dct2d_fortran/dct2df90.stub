@@ -1,0 +1,6 @@
+C NCLFORTSTART
+  subroutine dct2d(mxx,nyy,nspt,kd,dx,fin,spt1d,length1d)
+      integer  mxx,nyy,nspt,kd
+      real     fin(mxx,nyy),dx
+      real     spt1d(nspt),length1d(nspt)
+C NCLEND
