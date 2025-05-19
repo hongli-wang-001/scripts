@@ -1,0 +1,7 @@
+input_file: aod.nc
+obs_variable: ObsValue/aerosolOpticalDepth
+grid_file: dyn_grid_spec.nc
+output_file: v12_interpolated_aod.nc
+plot_file: v12_interpolated_aod.png
+obs_variable_netcdf: aod550nm 
+obs_variable_unit_netcdf: ''
